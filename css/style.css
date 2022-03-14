@@ -13,30 +13,6 @@ main {
     align-items: center;
 }
 
-#container {
-    position: relative;
-    height: 90vh;
-    width: 90%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: .6fr 1fr;
-}
-
-#img_container {
-    height: 100%;
-    width: 100%;
-}
-
-#img {
-    height: 100%;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(/images/IMG-20220314-WA0016.jpg);
-    border-radius: 10px;
-}
-
 #text_container {
     color: #fff;
     font-family: 'Times New Roman', Times, serif;
@@ -44,6 +20,12 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+    line-height: 30px;
+}
+
+#seraphin {
+    color: rgb(255, 81, 0);
 }
 
 #contactBtn {
@@ -69,4 +51,77 @@ main {
 
 #bonjour {
     font-size: 3em;
+}
+
+#container {
+    position: relative;
+    height: 80vh;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#img_container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#img {
+    height: 100%;
+    width: 95%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/images/IMG-20220314-WA0016.jpg);
+    border-radius: 10px;
+}
+
+@media screen and (max-width:950px) {
+    #container {
+        height: 50vh;
+        width: 90%;
+    }
+    #img_container {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+    #img {
+        height: 80%;
+        width: 95%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(/images/IMG-20220314-WA0016.jpg);
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #container {
+        position: relative;
+        height: 90vh;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .6fr 1fr;
+    }
+    #img_container {
+        height: 100%;
+        width: 100%;
+    }
+    #img {
+        height: 100%;
+        width: 100%;
+    }
+    #text_container {
+        color: #fff;
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
